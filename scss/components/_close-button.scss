@@ -1,0 +1,24 @@
+.close-button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--brand-color);
+
+    &__icon {
+        cursor: pointer;
+    }
+    &__icon:hover, &__icon:focus {
+        fill: var(--brand-color);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

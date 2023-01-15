@@ -1,0 +1,20 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 450px;
+    max-height: 609px;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    background-color: var(--background-color);
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    @media (min-width: 480px) {
+        max-width: 528px;
+        max-height: 581px;
+    }
+}
