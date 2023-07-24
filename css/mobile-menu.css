@@ -1,0 +1,91 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  padding: 48px 40px;
+}
+.mobile-menu.is-open {
+  display: block;
+}
+.mobile-menu__close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--background-color);
+  border: none;
+}
+.mobile-menu__close:hover {
+  fill: var(--brand-color);
+  cursor: pointer;
+}
+.mobile-menu__navigation-link-main {
+  color: var(--brand-color);
+}
+.mobile-menu__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mobile-menu__list-nav {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--header-color);
+}
+.mobile-menu__list-nav-item:not(:last-of-type) {
+  margin-bottom: 32px;
+}
+.mobile-menu__list-contacts-item:not(:last-of-type) {
+  margin-bottom: 32px;
+}
+.mobile-menu__connection-number {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+}
+.mobile-menu__connection {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.mobile-menu__list-social {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+.mobile-menu__list-social-item {
+  color: var(--brand-color);
+}

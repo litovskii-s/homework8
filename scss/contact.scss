@@ -1,0 +1,40 @@
+.contact {
+    display: none;
+
+        @media (min-width: 480px) and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        
+        @media (min-width: 770px) {
+            display: flex;
+            flex-direction: row;
+        }
+    & li:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__connection {
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        display: flex;
+        gap: 10px;
+        padding: 32px 0;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media (min-width: 480px) and (max-width: 768px) {
+            padding: 10px 0;
+        }
+    }
+    &__connection:hover, &__connection:focus {
+        color: var(--brand-color);
+    }
+    &__connection:hover .net__icon, &__connection:focus .net__icon{
+        fill: var(--brand-color);
+    }
+}

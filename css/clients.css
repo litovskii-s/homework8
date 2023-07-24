@@ -1,0 +1,115 @@
+.clients {
+  padding: 94px 0;
+}
+.clients__head {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.16;
+  color: var(--header-color);
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+@media (min-width: 480px) {
+  .clients__head {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+.clients__list {
+  gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 480px) {
+  .clients__list {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .clients__list {
+    max-width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (min-width: 770px) {
+  .clients__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+.clients__item {
+  width: 45%;
+}
+@media (min-width: 480px) {
+  .clients__item {
+    width: calc((100% - 60px) / 6);
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+.clients__link {
+  width: 210px;
+  height: 92px;
+  border: 1px solid var(--social-icons);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (max-width: 480px) {
+  .clients__link {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 770px) {
+  .clients__link {
+    width: auto;
+  }
+}
+.clients__link:hover, .clients__link:focus {
+  border: 1px solid var(--brand-color);
+}
+.clients__link:hover .net__icon, .clients__link:focus .net__icon {
+  fill: var(--brand-color);
+}

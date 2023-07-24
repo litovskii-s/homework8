@@ -1,0 +1,29 @@
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    &__link {
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: var(--background-color);
+        display: flex;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__link:hover, &__link:focus {
+        background-color:var(--brand-color);
+    }
+    &__link:hover .net__icon, &__link:focus .net__icon {
+        fill: var(--background-color);
+    }
+}
+.net__icon {
+    fill:var(--social-icons);
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}

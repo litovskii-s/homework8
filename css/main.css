@@ -1,0 +1,52 @@
+.main {
+  background-color: var(--background-color-title);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 480px;
+  max-height: 400px;
+  margin: 0 auto;
+  padding: 120px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 480px) {
+  .main {
+    max-width: 1600px;
+    margin: auto;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main.png);
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .main {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/Header\ img\ \(1\).jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Header\ img\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.main__title {
+  color: var(--background-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 360px;
+}
+@media (min-width: 480px) {
+  .main__title {
+    font-size: 44px;
+    max-width: 700px;
+  }
+}

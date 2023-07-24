@@ -9,25 +9,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
-    <link rel="stylesheet" href="./css/styles.min.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container header__box">
+            <div class="header__logo"><a href="./index.html" class="header__logo-link"><span class="header__logo-web">Web</span>Studio</a></div>
+            <div>
             <nav class="header__navigation">
-                <a href="./index.html" class="header__logo"><span class="header__logo-web">Web</span>Studio</a>
-                <ul class="header__navigation">
-                    <li><a href="./index.html" class="header__navigation-link"><span class="header__navigation-link-main">Студія</span></a></li>
-                    <li><a href="./portfolio.html" class="header__navigation-link">Портфоліо</a></li>
-                    <li><a href="#" class="header__navigation-link header__contact">Контакти</a></li>
-                </ul>
+                    <ul class="header__navigation-list">
+                        <li><a href="./index.html" class="header__navigation-link"><span class="header__navigation-link-main">Студія</span></a></li>
+                        <li><a href="./portfolio.html" class="header__navigation-link">Портфоліо</a></li>
+                        <li><a href="#" class="header__navigation-link header__contact">Контакти</a></li>
+                    </ul>
+                </div>
             </nav>
             <button class="header__burger-menu js-open-menu">
                 <svg  class="header__icon" width="40" height="40">
                     <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
                 </svg>
             </button>
-            <ul class="contact">
+            <div class="contact">
+                <ul class="contact"> 
                     <li class="contact__li">
                         <a href="mailto:info@devstudio.com" lang="en" class="contact__connection">
                             <div>
@@ -48,7 +51,8 @@
                         +38 096 111 11 11
                         </a>
                     </li>
-            </ul>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -62,7 +66,7 @@
             <div class="container">
                 <h2 class="special__visually-hidden">Наші особливості</h2>
                 <ul class="special__list">
-                    <li>
+                    <li class="special__list-unit">
                         <div class="special__icon">
                             <svg  class="net__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-antenna"></use>
@@ -71,16 +75,16 @@
                         <h3 class="special__list-header">Увага до деталей</h3>
                         <p class="special__list-description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
-                    <li>
-                        <div class="special__icon">
-                            <svg  class="net__icon" width="70" height="70">
-                                <use href="./images/symbol-defs.svg#icon-clock"></use>
-                            </svg>
-                        </div>
+                    <li class="special__list-unit">
+                    <div class="special__icon">
+                        <svg  class="net__icon" width="70" height="70">
+                            <use href="./images/symbol-defs.svg#icon-clock"></use>
+                        </svg>
+                    </div>
                         <h3 class="special__list-header">Пунктуативність</h3>
                         <p class="special__list-description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                    <li>
+                    <li class="special__list-unit">
                         <div class="special__icon">
                             <svg  class="net__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-diagram"></use>
@@ -89,7 +93,7 @@
                         <h3 class="special__list-header">Планування</h3>
                         <p class="special__list-description">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li>
+                    <li class="special__list-unit">
                         <div class="special__icon">
                             <svg  class="net__icon" width="70" height="70">
                                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
@@ -400,6 +404,7 @@
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
+            <div class="form__scrollable-content">
             <h2 class="form__name">Залиште свої дані, ми вам передзвонимо</h2>
             <form name="contact-form">
             <label for="person-name" class="form__label">Ім'я</label>
@@ -430,11 +435,13 @@
             <textarea class="form__textarea" id="person-comment" name="person-comment" placeholder="Введіть текст"></textarea>
             
             <input class="form__checkbox-input special__visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox">
-            <label class="form__checkbox-label" for="terms-checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="form__checkbox-link">Умови договору</a></label>
+            <label class="form__checkbox-label" for="terms-checkbox">Погоджуюся з розсилкою та приймаю <a href="#" class="form__checkbox-link">Умови <span class="form__checkbox-link-span">договору</span></a></label>
            
             <button type="submit" class="button-send">Відправити</button>
             </form>
+            </div>
         </div>
+    </div>
     </div>
     <div class="mobile-menu js-menu-container">
         <button class="mobile-menu__close-button js-close-menu">
@@ -462,14 +469,13 @@
                     </li>
                 </ul>
                 <ul class="mobile-menu__list-social">
-                    <li class="mobile-menu__list-social-item"><a href="#">Instagram</a></li>
-                    <li class="mobile-menu__list-social-item"><a href="#">Twitter</a></li>
-                    <li class="mobile-menu__list-social-item"><a href="#">Facebook</a></li>
-                    <li class="mobile-menu__list-social-item"><a href="#">LinkedIn</a></li>
+                    <li><a href="#" class="mobile-menu__list-social-item">Instagram</a></li>
+                    <li><a href="#" class="mobile-menu__list-social-item">Twitter</a></li>
+                    <li><a href="#" class="mobile-menu__list-social-item">Facebook</a></li>
+                    <li><a href="#" class="mobile-menu__list-social-item">LinkedIn</a></li>
                 </ul>
             </div>
         </nav>
-    
     </div>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
